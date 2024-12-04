@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Random User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="container">
-        <div class="card">
-            <img id="user-Image" src="./Ellipse 1.png" alt="User Image" class="user-image">
-                <h2 id="user-Name" class="user-name">Jumanazar Hoshimov</h2>
-                <p class="user-job">Frontend Developer</p>
-                <hr class="divider">
-                <p id="user-Phone" class="user-info">Phone: +998 90 123 45 67</p>
-                <p id="user-Location" class="user-info">Manzil: Toshkent shahri</p>
-                <p id="user-Age" class="user-info">Yosh: 23</p>
-                <p id="user-Email" class="user-info">Email: marslikbola@gmail.com</p>
+<body class="bg-gray-300 flex justify-center items-center h-screen overflow-hidden">
+    <div class="relative w-full max-w-sm text-center">
+
+        <div class="w-full h-[50px]" ></div>
+        <div class="relative bg-white p-5 rounded-lg shadow-md z-10">
+
+            <img id="user-Image" src="./Ellipse 1.png" alt="User Image" class="w-42 h-44 rounded-full mx-auto border-4 border-white object-cover -mt-20">
+            
+            <h2 id="user-Name" class="text-[#16A784] text-2xl font-bold mt-5">Jumanazar Hoshimov</h2>
+            <p class="text-black text-lg font-medium">Frontend Developer</p>
+            <hr class="my-4 border-gray-300">
+            <p id="user-Phone" class="text-sm text-gray-800">Phone: +998 90 123 45 67</p>
+            <p id="user-Location" class="text-sm text-gray-800">Manzil: Toshkent shahri</p>
+            <p id="user-Age" class="text-sm text-gray-800">Yosh: 23</p>
+            <p id="user-Email" class="text-sm text-gray-800">Email: marslikbola@gmail.com</p>
         </div>
-        <button id="changeUserButton" class="change-user-btn">Change user</button>
+        
+
+        <button id="btn" class="mt-5 px-6 py-3 bg-blue-500 text-white text-lg font-medium rounded-full hover:bg-blue-700 focus:outline-none">Change user</button>
     </div>
+
     <script src="main.js"></script>
 </body>
 
